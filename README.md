@@ -1,9 +1,9 @@
 # Módulo Purchase Category para Odoo 17
 
-## Descripción
+##📖 Descripción
 El módulo Purchase Category extiende las funcionalidades de compras en Odoo 17, permitiendo una mejor organización y gestión de las categorías en el proceso de compras.
 
-## Obtener el código
+##🚀 Obtener el código
 
 ```bash
 # Clonar el repositorio
@@ -18,7 +18,7 @@ git checkout develop
 
 ## Desarrollo
 
-### Requisitos previos
+###✅ Requisitos previos
 - Python 3.10 o superior
 - Odoo 17.0
 - Git
@@ -28,7 +28,7 @@ git checkout develop
 - Categorización avanzada de órdenes de compra
 - Filtros y agrupaciones por categorías
 
-## Instalación
+##🚀 Instalación
 
 1. Copie el módulo `purchase_category` en la carpeta `custom_addons`
 2. Actualice la lista de aplicaciones en Odoo
@@ -42,7 +42,7 @@ Después de la instalación:
 2. Active las opciones de categorización que necesite
 3. Configure las categorías de compra predeterminadas
 
-## Uso
+##▶️ Uso
 
 Para utilizar el módulo:
 
@@ -50,7 +50,7 @@ Para utilizar el módulo:
 2. Utilice los filtros de categoría en la vista de lista de compras
 3. Acceda a los reportes específicos por categoría desde el menú de Informes
 
-## Requisitos
+##✅ Requisitos
 
 - Odoo 17.0
 - Módulo base de compras (purchase) instalado
