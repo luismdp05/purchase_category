@@ -23,24 +23,6 @@ git checkout develop
 - Odoo 17.0
 - Git
 
-### Configuración del entorno de desarrollo
-1. Crear un entorno virtual:
-```bash
-python -m venv venv
-.\venv\Scripts\Activate
-```
-
-2. Instalar dependencias:
-```bash
-pip install -r requirements.txt
-```
-
-3. Enlazar el módulo:
-```bash
-# Desde el directorio de addons de Odoo
-New-Item -ItemType SymbolicLink -Path "custom_addons\purchase_category" -Target "ruta\al\modulo\purchase_category"
-```
-
 ## Características principales
 
 - Categorización avanzada de órdenes de compra
