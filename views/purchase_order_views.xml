@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- View purchase.order form -->
+    <record id="view_purchase_order_form" model="ir.ui.view">
+        <field name="name">view.purchase.order.form</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="allowed_category_ids" invisible="1"/>
+                <field name="category_id" invisible="state != 'purchase'" readonly="state != 'purchase' or category_id != False" groups="purchase_category.group_purchase_categorization" />
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- View Purchase Category View Tree -->
+    <record id="view_purchase_category_tree" model="ir.ui.view">
+        <field name="name">view.purchase.category.tree</field>
+        <field name="model">purchase.category</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- View Purchase Category form -->
+    <record id="view_purchase_category_form" model="ir.ui.view">
+        <field name="name">view.purchase.category.form</field>
+        <field name="model">purchase.category</field>
+        <field name="arch" type="xml">
+            <form string="Purchase Category">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- View Purchase Category search -->
+    <record id="view_purchase_category_search" model="ir.ui.view">
+        <field name="name">view.purchase.category.search</field>
+        <field name="model">purchase.category</field>
+        <field name="arch" type="xml">
+            <search>
+                <group expand="1" string="Group By">
+                    <filter string="Name" name="name" domain="[]" context="{'group_by':'name'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action Purchase Category -->
+    <record id="action_purchase_category" model="ir.actions.act_window">
+        <field name="name">Purchase Category</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">purchase.category</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+    </record>
+    <!-- Menu Purchase Category -->
+    <menuitem id="menu_purchase_category" name="Purchase Category" parent="purchase.menu_purchase_config" action="action_purchase_category"/>
+</odoo>

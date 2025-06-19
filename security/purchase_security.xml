@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- security group -->
+    <record id="group_purchase_categorization" model="res.groups">
+        <field name="name">Categorize purchase</field>
+        <field name="users" eval="[(4, ref('base.user_admin'))]"/>
+    </record>
+
+    <!-- Global registration rule -->
+    
+    <record id="purchase_order_category_rule" model="ir.rule">
+        <field name="name">Purchase Category Rule</field>
+        <field name="model_id" ref="model_purchase_order"/>
+        <field name="domain_force">
+            ['|', ('category_id', '=', False), ('category_id', 'in', user.purchase_category_ids.ids)]
+        </field>
+        <field name="groups" eval="[(4, ref('group_purchase_categorization'))]"/>
+        <field name="global" eval="True"/>
+    </record>
+</odoo>

@@ -1,0 +1,96 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* purchase_category
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-19 03:25+0000\n"
+"PO-Revision-Date: 2025-06-19 03:25+0000\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: purchase_category
+#: model:ir.model.fields,field_description:purchase_category.field_purchase_order__allowed_category_ids
+msgid "Allowed categories"
+msgstr "Categorías permitidas"
+
+#. module: purchase_category
+#: model:ir.model.fields,field_description:purchase_category.field_res_users__purchase_category_ids
+msgid "Allowed purchase categories"
+msgstr "Categorías de compra permitidas"
+
+#. module: purchase_category
+#: model:res.groups,name:purchase_category.group_purchase_categorization
+msgid "Categorize purchase"
+msgstr "Categorizar compra"
+
+#. module: purchase_category
+#: model:ir.model.fields,field_description:purchase_category.field_purchase_category__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: purchase_category
+#: model:ir.model.fields,field_description:purchase_category.field_purchase_category__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: purchase_category
+#: model:ir.model.fields,field_description:purchase_category.field_purchase_category__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: purchase_category
+#: model:ir.model.fields,field_description:purchase_category.field_purchase_category__display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: purchase_category
+#: model_terms:ir.ui.view,arch_db:purchase_category.view_purchase_category_search
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: purchase_category
+#: model:ir.model.fields,field_description:purchase_category.field_purchase_category__id
+msgid "ID"
+msgstr "ID"
+
+#. module: purchase_category
+#: model:ir.model.fields,field_description:purchase_category.field_purchase_category__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: purchase_category
+#: model:ir.model.fields,field_description:purchase_category.field_purchase_category__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: purchase_category
+#: model:ir.model.fields,field_description:purchase_category.field_purchase_category__name
+#: model_terms:ir.ui.view,arch_db:purchase_category.view_purchase_category_search
+msgid "Name"
+msgstr "Nombre"
+
+#. module: purchase_category
+#: model:ir.actions.act_window,name:purchase_category.action_purchase_category
+#: model:ir.model,name:purchase_category.model_purchase_category
+#: model:ir.model.fields,field_description:purchase_category.field_purchase_order__category_id
+#: model:ir.ui.menu,name:purchase_category.menu_purchase_category
+#: model_terms:ir.ui.view,arch_db:purchase_category.view_purchase_category_form
+msgid "Purchase Category"
+msgstr "Categoría de Compra"
+
+#. module: purchase_category
+#: model:ir.model,name:purchase_category.model_purchase_order
+msgid "Purchase Order"
+msgstr "Pedido de compra"
+
+#. module: purchase_category
+#: model:ir.model,name:purchase_category.model_res_users
+msgid "User"
+msgstr "Usuario"
